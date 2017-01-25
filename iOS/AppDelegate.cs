@@ -6,6 +6,8 @@
 //
 using Foundation;
 using UIKit;
+using Firebase.Analytics;
+using Google.MobileAds;
 
 namespace AddMobTest.iOS
 {
@@ -26,6 +28,8 @@ namespace AddMobTest.iOS
 		{
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
+			App.Configure();
+			MobileAds.Configure("ca-app-pub-7760423869401509~5528121470");
 
 			return true;
 		}
